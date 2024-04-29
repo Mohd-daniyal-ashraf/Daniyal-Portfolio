@@ -37,17 +37,14 @@ const right = document.querySelector("#newlist");
 let clicked = false;
 menu.addEventListener("click", () => {
   if (clicked == false) {
-    right.style.display = "flex";
-    document.querySelector("body").style.overflow = "hidden";
+    right.style.height = "100vh";
   } else {
-    right.style.display = "none";
-    document.querySelector("body").style.overflow = "scroll";
+    right.style.height = "0";
   }
   clicked = !clicked;
 });
 
 const item = document.querySelector("#hello");
-item.addEventListener("click", () => {
-  right.style.display = "none";
-  document.querySelector("body").style.overflow = "scroll";
+right.addEventListener("click", () => {
+  right.style.height = "0";
 });
