@@ -42,7 +42,12 @@ menu.addEventListener("click", () => {
   } else {
     right.style.display = "none";
     document.querySelector("body").style.overflow = "scroll";
-
   }
   clicked = !clicked;
+});
+
+const item = document.querySelector("#hello");
+item.addEventListener("click", () => {
+  right.style.display = "none";
+  document.querySelector("body").style.overflow = "scroll";
 });
