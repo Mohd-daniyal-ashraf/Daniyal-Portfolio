@@ -1,3 +1,4 @@
+// typing effect\
 const text = "full Stack Developer.";
 let index = 0;
 let isTyping = true;
@@ -32,19 +33,17 @@ function typeWriter() {
 
 typeWriter();
 
+// menu for mobile
 const menu = document.querySelector("#menu");
 const right = document.querySelector("#newlist");
-let clicked = false;
+
 menu.addEventListener("click", () => {
-  if (clicked == false) {
-    right.style.height = "100vh";
-  } else {
-    right.style.height = "0";
-  }
-  clicked = !clicked;
+  right.classList.toggle("open");
 });
 
-const item = document.querySelector("#hello");
-right.addEventListener("click", () => {
-  right.style.height = "0";
+const mobileItems = document.querySelectorAll(".mobile-items");
+mobileItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    right.classList.toggle("open");
+  });
 });
