@@ -38,12 +38,10 @@ const menu = document.querySelector("#menu");
 const right = document.querySelector("#newlist");
 
 menu.addEventListener("click", () => {
+  menu.classList.toggle("bx-x");
   right.classList.toggle("open");
 });
-
-const mobileItems = document.querySelectorAll(".mobile-items");
-mobileItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    right.classList.toggle("open");
-  });
+right.addEventListener("click", () => {
+  right.classList.toggle("open");
+  menu.classList.toggle("bx-x");
 });

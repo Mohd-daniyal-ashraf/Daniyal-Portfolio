@@ -37,7 +37,7 @@ nav .right {
 
 #menu {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   z-index: 20;
 }
 
@@ -207,6 +207,20 @@ nav .right {
   font-size: 14px;
 }
 
+.intern-tech {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.intern-tech li {
+  padding-right: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 @media (max-width: 1020px) {
   .right {
     display: none;
@@ -234,5 +248,15 @@ nav .right {
   }
   .education {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .intern-tech{
+    margin: 0;
+  }
+  .intern-tech li {
+    min-width: 100px;
+    margin-top: .5rem;
   }
 }
