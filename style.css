@@ -145,7 +145,8 @@ nav .right {
 
 .best-skill .best-skill-heading {
   font-size: 1rem;
-  font-weight: 550;
+  /* font-weight: 550; */
+  font-weight: bold;
   margin: 0 0 0.5rem;
 }
 
@@ -190,14 +191,16 @@ nav .right {
 .time-duration {
   font-size: 16px;
   color: #1f2937;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: bold;
   margin: 0;
 }
 
 .edu-role {
   font-size: 18px;
   color: #1f2937;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: bold;
   margin: 0.5rem 0;
 }
 
@@ -218,7 +221,8 @@ nav .right {
 .intern-tech li {
   padding-right: 2rem;
   font-size: 0.8rem;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: bold;
 }
 
 @media (max-width: 1020px) {
