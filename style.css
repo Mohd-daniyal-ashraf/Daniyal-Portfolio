@@ -225,7 +225,33 @@ nav .right {
   font-weight: bold;
 }
 
-@media (max-width: 1020px) {
+.sklll-container {
+  padding: 0 2rem;
+}
+
+.skill-content {
+  padding: 80px 40px 40px;
+  margin: 0 80px;
+  background: #f8faff;
+}
+
+.skill-info {
+  padding: 1rem 0;
+}
+
+.skill-bar-outer {
+  background-color: rgba(66, 151, 170, 0.22);
+  height: 5px;
+  width: 100%;
+}
+
+.skill-bar-inner {
+  width: 90%;
+  height: 5px;
+  background-color: #4297aa;
+}
+
+@media (max-width: 1030px) {
   .right {
     display: none;
   }
@@ -241,6 +267,17 @@ nav .right {
   .content {
     margin: 0;
   }
+  .skill-content {
+    margin: 0 50px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .skill-content {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (max-width: 770px) {
@@ -253,14 +290,21 @@ nav .right {
   .education {
     padding: 0 1rem;
   }
+  .skill-content {
+    margin: 0;
+    padding: 0;
+  }
+  .sklll-container {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 920px) {
-  .intern-tech{
+  .intern-tech {
     margin: 0;
   }
   .intern-tech li {
     min-width: 100px;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 }
