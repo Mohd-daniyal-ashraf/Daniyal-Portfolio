@@ -45,3 +45,12 @@ right.addEventListener("click", () => {
   right.classList.toggle("open");
   menu.classList.toggle("bx-x");
 });
+
+// Nght Mode
+
+let sun = document.querySelector(".bxs-sun");
+let a = document.querySelector(".outer");
+
+sun.addEventListener("click", () => {
+  a.classList.toggle("bg-black");
+});
