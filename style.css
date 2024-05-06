@@ -172,7 +172,7 @@ nav .right {
 
 .education {
   margin-top: 4rem;
-  padding: 4rem 2rem;
+  padding: 0rem 2rem;
 }
 
 .edu-heading {
@@ -227,12 +227,12 @@ nav .right {
 
 .sklll-container {
   padding: 0 2rem;
+  margin-top: 64px;
 }
 
 .skill-content {
-  padding: 80px 40px 40px;
+  padding: 0px 40px 0px;
   margin: 0 80px;
-  background: #f8faff;
 }
 
 .skill-info {
@@ -241,14 +241,33 @@ nav .right {
 
 .skill-bar-outer {
   background-color: rgba(66, 151, 170, 0.22);
-  height: 5px;
+  height: 4px;
+  border-radius: 30px;
   width: 100%;
 }
 
 .skill-bar-inner {
   width: 90%;
-  height: 5px;
+  height: 4px;
+  border-radius: 50px;
   background-color: #4297aa;
+}
+
+.skill-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-heading span{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.skill-heading-top{
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1030px) {
