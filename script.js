@@ -50,7 +50,20 @@ right.addEventListener("click", () => {
 
 let sun = document.querySelector(".bxs-sun");
 let a = document.querySelector(".outer");
-
+let white_content = document.querySelectorAll(".white-color");
+let edu_info_container = document.querySelectorAll(".edu-info-container");
+let icon_container = document.querySelectorAll(".icon-container");
 sun.addEventListener("click", () => {
   a.classList.toggle("bg-black");
+  white_content.forEach(function (element) {
+    element.classList.toggle("white-c");
+  });
+  icon_container.forEach(function (element) {
+    element.classList.toggle("new-icon-container");
+    element.classList.toggle("icon-container");
+  });
+  edu_info_container.forEach(function (element) {
+    element.classList.toggle("edu-info-container");
+    element.classList.toggle("new-edu-info-container");
+  });
 });
