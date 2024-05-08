@@ -48,13 +48,18 @@ right.addEventListener("click", () => {
 
 // Nght Mode
 
-let sun = document.querySelector(".bxs-sun");
+let sun = document.querySelector("#night-mode");
 let a = document.querySelector(".outer");
 let white_content = document.querySelectorAll(".white-color");
 let edu_info_container = document.querySelectorAll(".edu-info-container");
 let icon_container = document.querySelectorAll(".icon-container");
-sun.addEventListener("click", () => {
+let moblieMenu = document.querySelector(".newright");
+// Function to toggle night mode
+function toggleNightMode() {
   a.classList.toggle("bg-black");
+  moblieMenu.classList.toggle("bg-black");
+  sun.classList.toggle("bxs-sun");
+  sun.classList.toggle("bxs-moon");
   white_content.forEach(function (element) {
     element.classList.toggle("white-c");
   });
@@ -66,4 +71,19 @@ sun.addEventListener("click", () => {
     element.classList.toggle("edu-info-container");
     element.classList.toggle("new-edu-info-container");
   });
+
+  // Store night mode state in local storage
+  const nightModeEnabled = a.classList.contains("bg-black");
+  localStorage.setItem("nightModeEnabled", nightModeEnabled);
+}
+
+// Event listener for sun icon click
+sun.addEventListener("click", toggleNightMode);
+
+// Check if night mode is enabled in local storage on page load
+window.addEventListener("load", () => {
+  const nightModeEnabled = localStorage.getItem("nightModeEnabled") === "true";
+  if (nightModeEnabled) {
+    toggleNightMode(); // Apply night mode if it was enabled
+  }
 });
