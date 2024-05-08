@@ -87,3 +87,14 @@ window.addEventListener("load", () => {
     toggleNightMode(); // Apply night mode if it was enabled
   }
 });
+
+let effeft = document.querySelector("#habhai");
+document.addEventListener("mousemove", (e) => {
+  effeft.style.cssText = "left:" + e.clientX + "px;top:" + e.clientY + "px";
+});
+document.addEventListener("click", (e) => {
+  effeft.classList.add("cur");
+  setTimeout(() => {
+    effeft.classList.remove("cur");
+  }, 400);
+});
