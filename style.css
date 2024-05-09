@@ -5,7 +5,27 @@
 }
 
 html {
-  cursor: url("cursor.png"), auto;
+  /* cursor: url("cursor.png"), auto; */
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background:#6b21abab;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #6b21abd9;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: #6b21ab;
 }
 
 nav {
@@ -344,8 +364,8 @@ footer {
   border-radius: 50%;
   box-shadow: 0 0 10px 3px #6b21ab;
   animation: 0.5s scale linear;
+  z-index: 1000;
 }
-
 
 @keyframes scale {
   0% {

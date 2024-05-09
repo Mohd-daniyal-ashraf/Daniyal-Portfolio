@@ -49,14 +49,13 @@ right.addEventListener("click", () => {
 // Nght Mode
 
 let sun = document.querySelector("#night-mode");
-let a = document.querySelector(".outer");
 let white_content = document.querySelectorAll(".white-color");
 let edu_info_container = document.querySelectorAll(".edu-info-container");
 let icon_container = document.querySelectorAll(".icon-container");
 let moblieMenu = document.querySelector(".newright");
 // Function to toggle night mode
 function toggleNightMode() {
-  a.classList.toggle("bg-black");
+  document.body.classList.toggle("bg-black");
   moblieMenu.classList.toggle("bg-black");
   sun.classList.toggle("bxs-sun");
   sun.classList.toggle("bxs-moon");
