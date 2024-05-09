@@ -88,7 +88,7 @@ window.addEventListener("load", () => {
   }
 });
 
-let effeft = document.querySelector("#habhai");
+let effeft = document.querySelector("#outer-effect");
 document.addEventListener("mousemove", (e) => {
   effeft.style.cssText = "left:" + e.clientX + "px;top:" + e.clientY + "px";
 });

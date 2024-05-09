@@ -4,7 +4,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
+html {
+  cursor: url("cursor.png"), auto;
 }
 
 nav {
@@ -343,8 +344,8 @@ footer {
   border-radius: 50%;
   box-shadow: 0 0 10px 3px #6b21ab;
   animation: 0.5s scale linear;
-
 }
+
 
 @keyframes scale {
   0% {
