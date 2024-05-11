@@ -30,9 +30,9 @@ function typeWriter() {
     index--;
   }
 }
-
 typeWriter();
 
+// -------------------------------------------------------------------------------------
 // menu for mobile
 const menu = document.querySelector("#menu");
 const right = document.querySelector("#newlist");
@@ -46,6 +46,7 @@ right.addEventListener("click", () => {
   menu.classList.toggle("bx-x");
 });
 
+// -------------------------------------------------------------------------------------
 // Nght Mode
 
 let sun = document.querySelector("#night-mode");
@@ -72,7 +73,7 @@ function toggleNightMode() {
   });
 
   // Store night mode state in local storage
-  const nightModeEnabled = a.classList.contains("bg-black");
+  const nightModeEnabled = document.body.classList.contains("bg-black");
   localStorage.setItem("nightModeEnabled", nightModeEnabled);
 }
 
@@ -87,6 +88,8 @@ window.addEventListener("load", () => {
   }
 });
 
+// -------------------------------------------------------------------------------------
+
 let effeft = document.querySelector("#outer-effect");
 document.addEventListener("mousemove", (e) => {
   effeft.style.cssText = "left:" + e.clientX + "px;top:" + e.clientY + "px";
@@ -97,3 +100,5 @@ document.addEventListener("click", (e) => {
     effeft.classList.remove("cur");
   }, 400);
 });
+
+// -------------------------------------------------------------------------------------
