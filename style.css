@@ -384,7 +384,8 @@ footer {
 
 .project-list{
   display: flex;
-  justify-content: space-between;
+  gap: 1.25rem;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -393,8 +394,8 @@ footer {
   height: 385px;
   min-width: 30%;
   background-color: #4297aa;
-  /* margin-right: 1.5rem;
-  margin-bottom: 1.5rem; */
+  /* margin-right: 1.5rem; */
+  /* margin-bottom: 1.5rem; */
 }
 
 @keyframes scale {
@@ -445,6 +446,9 @@ footer {
   .content .font-page {
     padding: 0 16px;
   }
+  .project-container{
+    padding: 0 16px;
+  }
   .education {
     padding: 0 1rem;
   }
@@ -467,8 +471,20 @@ footer {
   }
 }
 
-@media (1030px < width &&  1030px < width ){
-  
+@media (min-width: 640px) and (max-width: 1023px) {
+  .project-container{
+    background-color: #ff3700;
+  }
+  .project{
+    width: 48.3%;
+  }
 }
 
-
+@media (max-width: 640px) {
+  .project-container{
+    background-color: #0dff00;
+  }
+  .project{
+    width: 100%;
+  }
+}
