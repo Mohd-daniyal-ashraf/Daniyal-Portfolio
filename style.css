@@ -331,9 +331,11 @@ footer {
 .bg-white {
   background: white !important;
 }
-
 .white-c {
   color: white !important;
+}
+.new-brand-color{
+  color: #A855f7;
 }
 
 .new-edu-info-container {
@@ -365,6 +367,34 @@ footer {
   box-shadow: 0 0 10px 3px #6b21ab;
   animation: 0.5s scale linear;
   z-index: 1000;
+}
+
+.project-container{
+  padding: 0 32px;
+  margin: 64px 0 0;
+}
+
+.project-container p{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin: 12px 0;
+  margin-bottom: 2rem;
+}
+
+.project-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project{
+  width: 31.5%;
+  height: 385px;
+  min-width: 30%;
+  background-color: #4297aa;
+  /* margin-right: 1.5rem;
+  margin-bottom: 1.5rem; */
 }
 
 @keyframes scale {
@@ -436,4 +466,9 @@ footer {
     margin-top: 0.5rem;
   }
 }
+
+@media (1030px < width &&  1030px < width ){
+  
+}
+
 

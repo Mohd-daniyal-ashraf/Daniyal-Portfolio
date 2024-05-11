@@ -54,6 +54,7 @@ let white_content = document.querySelectorAll(".white-color");
 let edu_info_container = document.querySelectorAll(".edu-info-container");
 let icon_container = document.querySelectorAll(".icon-container");
 let moblieMenu = document.querySelector(".newright");
+let brand = document.querySelectorAll(".brand");
 // Function to toggle night mode
 function toggleNightMode() {
   document.body.classList.toggle("bg-black");
@@ -70,6 +71,10 @@ function toggleNightMode() {
   edu_info_container.forEach(function (element) {
     element.classList.toggle("edu-info-container");
     element.classList.toggle("new-edu-info-container");
+  });
+  brand.forEach(function (element) {
+    element.classList.toggle("main-c");
+    element.classList.toggle("new-brand-color");
   });
 
   // Store night mode state in local storage
