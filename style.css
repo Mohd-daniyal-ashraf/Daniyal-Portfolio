@@ -325,8 +325,9 @@ footer {
   margin-bottom: 20px;
 }
 
-.bg-black {
-  background-color: #1d09d2;
+
+.bgblack {
+  background-color: #121212;
 }
 .bg-white {
   background: white !important;
@@ -419,6 +420,10 @@ footer {
   border: 1px solid rgb(76, 86, 100);
 }
 
+.li-color {
+  color: #9ca3af;
+}
+
 .project img {
   width: 99.5%;
   height: 11rem;
@@ -436,7 +441,7 @@ footer {
   font-weight: bold;
 }
 
-.project-content .project-link {
+.project-link {
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;

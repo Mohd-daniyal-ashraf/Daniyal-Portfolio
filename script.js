@@ -56,10 +56,11 @@ let icon_container = document.querySelectorAll(".icon-container");
 let moblieMenu = document.querySelector(".newright");
 let brand = document.querySelectorAll(".brand");
 let project = document.querySelectorAll(".project");
+let li = document.querySelectorAll(".li");
 // Function to toggle night mode
 function toggleNightMode() {
-  document.body.classList.toggle("bg-black");
-  moblieMenu.classList.toggle("bg-black");
+  document.body.classList.toggle("bgblack");
+  moblieMenu.classList.toggle("bgblack");
   sun.classList.toggle("bxs-sun");
   sun.classList.toggle("bxs-moon");
   white_content.forEach(function (element) {
@@ -83,8 +84,12 @@ function toggleNightMode() {
     element.classList.toggle("night-border");
   });
 
+  li.forEach(function (element) {
+    element.classList.toggle("li-color");
+  });
+
   // Store night mode state in local storage
-  const nightModeEnabled = document.body.classList.contains("bg-black");
+  const nightModeEnabled = document.body.classList.contains("bgblack");
   localStorage.setItem("nightModeEnabled", nightModeEnabled);
 }
 
