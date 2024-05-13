@@ -464,6 +464,11 @@ footer {
   font-weight: bold;
 }
 
+.project-content a:hover{
+  transition: .2s;
+  opacity: .7;
+}
+
 /* ---------------------------------------------------------------------------- */
 
 @media (max-width: 1030px) {
