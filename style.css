@@ -362,11 +362,11 @@ footer {
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-  width: 1rem;
-  height: 1rem;
+  width: 0rem;
+  height: 0rem;
   border-radius: 50%;
   box-shadow: 0 0 10px 3px #6b21ab;
-  animation: 0.5s scale linear;
+  animation: 0.5s scale ease;
   z-index: 1000;
 }
 
@@ -376,9 +376,9 @@ footer {
   }
   100% {
     opacity: 0;
-    width: 5rem;
-    height: 5rem;
-    box-shadow: 0 0 0 2px #6b21ab;
+    width: 4.5rem;
+    height: 4.5rem;
+    box-shadow: 0 0 0 5px #6b21ab;
   }
 }
 
