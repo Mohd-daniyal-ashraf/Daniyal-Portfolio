@@ -119,6 +119,7 @@ nav .right {
   font-weight: 600;
   color: black;
   transition: all 0.2s;
+  font-weight: bold;
 }
 
 .newright a:hover {
@@ -325,7 +326,6 @@ footer {
   margin-bottom: 20px;
 }
 
-
 .bgblack {
   background-color: #121212;
 }
@@ -464,90 +464,10 @@ footer {
   font-weight: bold;
 }
 
-.project-content a:hover{
-  transition: .2s;
-  opacity: .7;
+.project-content a:hover {
+  transition: 0.2s;
+  opacity: 0.7;
 }
-
-/* ---------------------------------------------------------------------------- */
-
-@media (max-width: 1030px) {
-  .right {
-    display: none;
-  }
-  .burger-icon {
-    display: block;
-  }
-  nav {
-    padding: 10px 16px;
-  }
-  #menu {
-    display: flex;
-  }
-  .content {
-    margin: 0;
-  }
-  .skill-content {
-    margin: 0 50px;
-    padding: 0;
-  }
-}
-
-@media (max-width: 900px) {
-  .skill-content {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (max-width: 770px) {
-  .content {
-    padding: 0rem;
-  }
-  .content .font-page {
-    padding: 0 16px;
-  }
-  .project-container {
-    padding: 0 16px;
-  }
-  .education {
-    padding: 0 1rem;
-  }
-  .skill-content {
-    margin: 0;
-    padding: 0;
-  }
-  .sklll-container {
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 920px) {
-  .intern-tech {
-    margin: 0;
-  }
-  .intern-tech li {
-    min-width: 100px;
-    margin-top: 0.5rem;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 1023px) {
-  .project-container {
-  }
-  .project {
-    width: 48.3%;
-  }
-}
-
-@media (max-width: 640px) {
-  .project-container {
-  }
-  .project {
-    width: 100%;
-  }
-}
-
 
 .Download-button {
   display: flex;
@@ -567,7 +487,7 @@ footer {
   transition: all 0.2s;
   top: 5rem;
   right: 1.9rem;
-  transform: scale(.8);
+  transform: scale(0.8);
 }
 
 .Download-button svg {
@@ -628,4 +548,86 @@ footer {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   transform: translate(-5px, 15px) rotate(45deg);
+}
+
+/* ---------------------------------------------------------------------------- */
+
+@media (max-width: 1030px) {
+  .right {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+  }
+  nav {
+    padding: 10px 16px;
+  }
+  #menu {
+    display: flex;
+  }
+  .content {
+    margin: 0;
+  }
+  .skill-content {
+    margin: 0 50px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .skill-content {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .content {
+    padding: 0rem;
+  }
+  .content .font-page {
+    padding: 0 16px;
+  }
+  .project-container {
+    padding: 0 16px;
+  }
+  .education {
+    padding: 0 1rem;
+  }
+  .skill-content {
+    margin: 0;
+    padding: 0;
+  }
+  .sklll-container {
+    padding: 0 1rem;
+  }
+  .Download-button {
+    display: none;
+  }
+}
+
+@media (max-width: 920px) {
+  .intern-tech {
+    margin: 0;
+  }
+  .intern-tech li {
+    min-width: 100px;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .project-container {
+  }
+  .project {
+    width: 48.3%;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-container {
+  }
+  .project {
+    width: 100%;
+  }
 }
