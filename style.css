@@ -550,6 +550,10 @@ footer {
   transform: translate(-5px, 15px) rotate(45deg);
 }
 
+.typed-cursor{
+  color: #6b21ab;
+}
+
 /* ---------------------------------------------------------------------------- */
 
 @media (max-width: 1030px) {
