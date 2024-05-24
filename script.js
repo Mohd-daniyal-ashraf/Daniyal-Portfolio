@@ -1,35 +1,44 @@
-// typing effect\
-const text = "full Stack Developer.";
 let index = 0;
+let textIndex = 0;
 let isTyping = true;
 const speed = 50;
 
+let arr = [
+  "full Stack Developer.",
+  "Problem Solver.",
+  "Competitive programmer.",
+];
+
 function typeWriter() {
+  let text = arr[textIndex];
   const length = text.length;
 
   if (isTyping) {
     document.getElementById("typingEffect").textContent += text.charAt(index);
+    index++;
     if (index === length) {
       isTyping = false;
       setTimeout(typeWriter, 1000); // Delay before backspacing
     } else {
       setTimeout(typeWriter, speed);
     }
-    index++;
   } else {
+    index--;
     document.getElementById("typingEffect").textContent = text.substring(
       0,
       index
     );
     if (index === 0) {
       isTyping = true;
-      setTimeout(typeWriter, 1000); // Delay before typing again
+      textIndex = (textIndex + 1) % arr.length; // Move to the next string
+      setTimeout(typeWriter, 1000); // Delay before typing the next string
     } else {
       setTimeout(typeWriter, speed);
     }
-    index--;
   }
 }
+
+// Start the typing effect
 typeWriter();
 
 // -------------------------------------------------------------------------------------
