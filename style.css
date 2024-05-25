@@ -209,6 +209,10 @@ nav .right {
   align-items: center;
 }
 
+.footer-icon{
+  margin: 0 8px 0 !important;
+}
+
 .icon-container img {
   width: 2.5rem;
 }
