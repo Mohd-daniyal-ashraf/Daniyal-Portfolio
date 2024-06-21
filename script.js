@@ -1,4 +1,3 @@
-
 // -------------------------------------------------------------------------------------
 // menu for mobile
 const menu = document.querySelector("#menu");
@@ -85,3 +84,35 @@ document.addEventListener("click", (e) => {
 });
 
 // -------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  const snowContainer = document.querySelector(".snow-container");
+
+  function createSnowflake() {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+
+    // Random size and position
+    const size = Math.random() * 10 + 3 + "px";
+    snowflake.style.width = size;
+    snowflake.style.height = size;
+    snowflake.style.left = Math.random() * window.innerWidth + "px";
+
+    // Random animation duration
+    const duration = Math.random() * 3 + 2 + "s";
+    snowflake.style.animationDuration = duration;
+
+    // Random delay before animation starts
+    const delay = Math.random() * 5 + "s";
+    snowflake.style.animationDelay = delay;
+
+    snowContainer.appendChild(snowflake);
+
+    // Remove snowflake after animation ends to prevent DOM overload
+    setTimeout(() => {
+      snowflake.remove();
+    }, (parseFloat(duration) + parseFloat(delay)) * 1000);
+  }
+
+  // Generate snowflakes continuously at a higher frequency
+  setInterval(createSnowflake, 50);
+});

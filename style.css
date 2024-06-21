@@ -209,7 +209,7 @@ nav .right {
   align-items: center;
 }
 
-.footer-icon{
+.footer-icon {
   margin: 0 8px 0 !important;
 }
 
@@ -555,16 +555,32 @@ footer {
   transform: translate(-5px, 15px) rotate(45deg);
 }
 
-.typed-cursor{
+.typed-cursor {
   color: #6b21ab;
 }
 
-@media (max-width: 550px){
-  .auto-type-container{
+@media (max-width: 550px) {
+  .auto-type-container {
     display: block;
   }
 }
+.snowflake {
+  position: fixed;
+  top: -30px;
+  background: #6b21ab;
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: fall linear infinite;
+  box-shadow: 0 0 3px #6b21ab;
+  z-index: -10000;
+}
 
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
 /* ---------------------------------------------------------------------------- */
 
 @media (max-width: 1030px) {
