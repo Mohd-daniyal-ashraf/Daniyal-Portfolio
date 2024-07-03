@@ -1,4 +1,3 @@
-
 // -------------------------------------------------------------------------------------
 // menu for mobile
 const menu = document.querySelector("#menu");
@@ -85,3 +84,8 @@ document.addEventListener("click", (e) => {
 });
 
 // -------------------------------------------------------------------------------------
+
+// got to top
+document.querySelector(".upper").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
