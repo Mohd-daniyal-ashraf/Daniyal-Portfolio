@@ -568,8 +568,8 @@ footer {
   font-size: 1.5rem;
   background-color: #6b21ab;
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 1.5rem;
   color: white;
   border-radius: 5px;
   cursor: pointer;
