@@ -418,6 +418,7 @@ footer {
 }
 
 .project-box-shadow {
+  overflow: hidden;
   box-shadow: 5px 5px 15px #bbc3d1, -5px -5px 15px #fff;
 }
 
@@ -433,8 +434,15 @@ footer {
   width: 99.5%;
   height: 11rem;
   border-radius: 0.75rem;
+  overflow: hidden;
   object-fit: cover;
+  transition: .18s ease-in-out;
 }
+
+.project img:hover{
+  transform: scale(1.07);
+}
+
 
 .project-content {
   padding: 1rem;
@@ -573,6 +581,7 @@ footer {
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  transition: .4s;
 }
 
 .upper:active {
@@ -658,6 +667,7 @@ footer {
 
 @media (min-width: 640px) and (max-width: 1023px) {
   .project-container {
+    
   }
   .project {
     width: 48.3%;

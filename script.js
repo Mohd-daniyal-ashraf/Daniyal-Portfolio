@@ -86,6 +86,28 @@ document.addEventListener("click", (e) => {
 // -------------------------------------------------------------------------------------
 
 // got to top
-document.querySelector(".upper").addEventListener("click", function () {
+const button = document.querySelector(".upper");
+
+window.addEventListener("scroll", function () {
+  const scrollHeight = window.scrollY;
+  if (scrollHeight > 400) {
+    button.style.opacity = "1";
+  } else {
+    button.style.opacity = "0";
+  }
+});
+
+button.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// Check initial scroll position on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollHeight = window.scrollY;
+  if (scrollHeight > 400) {
+    button.style.opacity = "1";
+  } else {
+    button.style.opacity = "0";
+  }
+});
+
