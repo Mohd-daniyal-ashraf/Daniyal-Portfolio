@@ -587,7 +587,9 @@ footer {
 .upper:active {
   color: black;
   background-color: white;
-  box-shadow: 0 0 1px black;
+  box-shadow: 0 0 10px grey;
+  border-radius: 10px;
+
 }
 
 /* ---------------------------------------------------------------------------- */
